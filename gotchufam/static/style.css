@@ -1,0 +1,79 @@
+body {
+  color: #eee;
+  background-color: #000;
+}
+
+/* page layout debugging */
+* {
+  outline: 1px dotted green;
+}
+
+.hidden {
+  display: none;
+}
+
+.login {
+  height: 100%;
+  width: 100%;
+}
+
+.page-frame {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.controls {
+  margin: auto;
+  text-align: center;
+  font-size: 5vh;
+}
+button {
+  font-size: 5vh;
+}
+
+#videos  {
+  width: 100%;
+  height: 80%;
+  margin: auto;
+}
+#videos > video:nth-child(1) {
+  width: 100%;
+  height: 80%;
+  margin: auto;
+}
+#videos > video:nth-child(1n+1) {
+  float: right;
+  width: 20%;
+  height: 20%;
+  margin: auto;
+}
+
+.selected {
+  outline: 1mm solid #2e8;
+}
+
+.unselected {
+  outline: 1mm solid #444;
+}
+
+.face-selector {
+  display: flex;
+}
+
+.face-selector > * {
+  width: 33vw;
+  max-width: 3cm;
+  height: 33vw;
+  max-height: 3cm;
+}
+
+
+.flip-horizontal {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}

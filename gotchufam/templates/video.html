@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <script src="static/peer-0.3.20.min.js"></script>
+    <link href="static/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+      <div class="page-frame">
+        <div id="videos"></div>
+        <video class="flip-horizontal" id="local"></video>
+        <br/>
+        <div class="controls">
+          <div id="facebar"></div>
+        </div>
+      </div>
+          
+  <script>
+    var PEER_JS_CONFIG = {{ peerjs_config | tojson }};
+    var API_ROOT = {{ api_root | tojson }};
+    var APP_CONFIG = {{ app_config | tojson }};
+  </script>
+  <script src="static/video.js"></script>
+  </body>
+</html>
